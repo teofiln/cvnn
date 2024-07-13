@@ -23,16 +23,16 @@ management experience in a career spanning 18 years.
 
 September 2023 - Present, Oslo, Norway
 
-- Participated in development of a data platform based on Azure Databricks, 
+- Participated in development of a data platform based on Azure Databricks,
 using Terraform and Azure DevOps;
 - Built ELT pipelines on Databricks using PySpark and Unity Catalog;
 - Led Posit Team on-boarding for 15-20 people;
 - Migrated dashboards and reports to new infrastructure;
 - Partnered with communications department to build a data
 pipeline for presenting data on the web;
-- Communicated with project managers regarding project planning, 
+- Communicated with project managers regarding project planning,
 development and execution on data related tasks;
-- Provided training for the the team of researchers and updated documentation 
+- Provided training for the the team of researchers and updated documentation
 frequently.
 
 **Freelance Data Consultancy** - Data Analyst/Engineer
@@ -76,4 +76,5 @@ October 1999 - September 2005, Skopje, North Macedonia
 - [AWS Certified Solutions Architect – Associate](https://www.credly.com/badges/1930112d-d92a-4117-86d4-cdbb210f4266/public_url)
 - [Databricks Certified Data Engineer Associate](https://credentials.databricks.com/9c4e70f8-91b1-49da-a359-3e2d2f8b2c89)
 - [Microsoft Certified: Azure Fundamentals](https://learn.microsoft.com/en-us/users/novicanakov-2159/credentials/7ecc93b6a2e38a11)
+- [dbt Fundamentals](https://www.credential.net/2a95b452-5425-49f9-bc3e-85abc0eca9e8#gs.l24xnd)
 - [Carpentries Certified Instructor](https://carpentries.org/instructors/)
