@@ -26,7 +26,7 @@ September 2023 - Present, Oslo, Norway
 - Participated in development of a data platform based on Azure Databricks,
 using Terraform and Azure DevOps;
 - Built ELT pipelines on Databricks using PySpark and Unity Catalog;
-- Led Posit Team on-boarding for 15-20 people;
+- Led Posit Team on-boarding for 15–20 people;
 - Migrated dashboards and reports to new infrastructure;
 - Partnered with communications department to build a data
 pipeline for presenting data on the web;
@@ -49,8 +49,8 @@ modeling energy efficiency, and medical research;
 November 2005 - November 2022, Skopje, North Macedonia
 
 - Responsible for all things finance and negotiation of contracts with clients;
-- Managed a team of 4-7 people. Responsible for training new staff;
-- Expanded the company business to accounting services, adding an additional revenue stream.
+- Managed a team of 4–7 people. Responsible for training new staff;
+- Expanded the company business to accounting services, adding another revenue stream.
 
 **IBORN.NET DOO - Skopje** - Finance and business development adviser - Part time\
 January 2013 - August 2023
