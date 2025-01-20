@@ -24,13 +24,13 @@ jobs:
       run: |
         sudo apt-get update
         sudo apt-get install -y pandoc
-        sudo apt-get install -y pdflatex
+        curl --proto '=https' --tlsv1.2 -fsSL https://drop-sh.fullyjustified.net |sh
 
     - name: Render Markdown to HTML
       run: pandoc -f markdown -t html5 -o index.html cvnn.md
 
     - name: Render Markdown to PDF
-      run: pandoc --from=gfm --to=pdf -o cvnn.pdf cvnn.md
+      run: pandoc --pdf-engine "tectonic" -f markdown -t pdf -o ./cvnn.pdf cvnn.md
 
     - name: Configure Git
       run: |
