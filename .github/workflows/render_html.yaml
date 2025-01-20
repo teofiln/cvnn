@@ -7,7 +7,7 @@ on:
   pull_request:
     branches:
       - main
-  worfklow-dispatch
+  workflow_dispatch:
 
 jobs:
   render-markdown:
@@ -25,8 +25,13 @@ jobs:
     - name: Render Markdown to HTML
       run: pandoc -f markdown -t html5 -o index.html cvnn.md
 
-    - name: Upload generated HTML
-      uses: actions/upload-artifact@v3
-      with:
-        name: rendered-html
-        path: index.html
+    - name: Configure Git
+      run: |
+        git config --global user.name "github-actions[bot]"
+        git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+    - name: Commit and Push Changes
+      run: |
+        git add index.html
+        git commit -m "Update index.html from cvnn.md"
+        git push
