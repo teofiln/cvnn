@@ -32,7 +32,7 @@ using Terraform and Azure DevOps;
 pipeline for presenting data on the web;
 - Communicated with project managers regarding project planning,
 development and execution on data related tasks;
-- Provided training for the the team of researchers and updated documentation
+- Provided training for the team of researchers and updated documentation
 frequently.
 
 **Freelance Data Consultancy** - Data Analyst/Engineer
@@ -56,7 +56,7 @@ November 2005 - November 2022, Skopje, North Macedonia
 January 2013 - August 2023
 
 - Implemented accounting and finance software. Migrated data and accounts to new system;
-- Trained staff to work in new system, wrote documentation and provided ongoing support;
+- Trained staff to work in the new system, wrote documentation and provided ongoing support;
 - Advise on finance and operations matters. Help compile VAT and end of year statements.
 
 ## EDUCATION
