@@ -24,7 +24,9 @@ jobs:
       run: |
         sudo apt-get update
         sudo apt-get install -y pandoc
-        curl --proto '=https' --tlsv1.2 -fsSL https://drop-sh.fullyjustified.net |sh
+        curl --proto '=https' --tlsv1.2 -fsSL https://drop-sh.fullyjustified.net | sh
+        sudo mv ./tectonic /usr/local/bin/tectonic
+        sudo chmod +x /usr/local/bin/tectonic
 
     - name: Render Markdown to HTML
       run: pandoc -f markdown -t html5 -o index.html cvnn.md
