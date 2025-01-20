@@ -1,4 +1,4 @@
-name: Render Markdown to HTML
+name: Render Markdown to HTML and PDF
 
 permissions:
   contents: write
@@ -20,13 +20,19 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v3
 
-    - name: Set up Pandoc
+    - name: Set up Pandoc and Tectonic
       run: |
         sudo apt-get update
         sudo apt-get install -y pandoc
+        curl --proto '=https' --tlsv1.2 -sSf https://github.com/tectonic-typesetting/tectonic/releases/download/latest/tectonic-x86_64-linux.zip -o tectonic.zip
+        unzip tectonic.zip -d /usr/local/bin
+        chmod +x /usr/local/bin/tectonic
 
     - name: Render Markdown to HTML
       run: pandoc -f markdown -t html5 -o index.html cvnn.md
+
+    - name: Render Markdown to PDF
+      run: pandoc --pdf-engine "tectonic" -f markdown -t pdf -o cvnn.pdf cvnn.md
 
     - name: Configure Git
       run: |
@@ -35,8 +41,8 @@ jobs:
 
     - name: Commit and Push Changes
       run: |
-        git add index.html
-        git commit -m "Update index.html from cvnn.md"
+        git add index.html cvnn.pdf
+        git commit -m "Update index.html and cvnn.pdf from cvnn.md"
         git push
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
