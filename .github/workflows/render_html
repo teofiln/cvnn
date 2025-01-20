@@ -1,0 +1,32 @@
+name: Render Markdown to HTML
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  worfklow-dispatch
+
+jobs:
+  render-markdown:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Set up Pandoc
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y pandoc
+
+    - name: Render Markdown to HTML
+      run: pandoc -f markdown -t html5 -o index.html cvnn.md
+
+    - name: Upload generated HTML
+      uses: actions/upload-artifact@v3
+      with:
+        name: rendered-html
+        path: index.html
