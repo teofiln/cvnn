@@ -5,11 +5,7 @@ permissions:
 
 on:
   push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
+    paths: "cvnn.md"
   workflow_dispatch:
 
 jobs:
