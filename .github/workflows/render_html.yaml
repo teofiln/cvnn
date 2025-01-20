@@ -24,15 +24,12 @@ jobs:
       run: |
         sudo apt-get update
         sudo apt-get install -y pandoc
-        curl --proto '=https' --tlsv1.2 -sSf https://github.com/tectonic-typesetting/tectonic/releases/download/latest/tectonic-x86_64-linux.zip -o tectonic.zip
-        unzip tectonic.zip -d /usr/local/bin
-        chmod +x /usr/local/bin/tectonic
 
     - name: Render Markdown to HTML
       run: pandoc -f markdown -t html5 -o index.html cvnn.md
 
     - name: Render Markdown to PDF
-      run: pandoc --pdf-engine "tectonic" -f markdown -t pdf -o cvnn.pdf cvnn.md
+      run: pandoc --from=gfm --to=pdf -o cvnn.pdf cvnn.md
 
     - name: Configure Git
       run: |
