@@ -26,6 +26,7 @@ jobs:
       with:
         to: html
         path: cvnn.md
+        output: index.html
 
     - name: Render Markdown to PDF
       uses: quarto-dev/quarto-actions/render@v2
@@ -40,8 +41,7 @@ jobs:
 
     - name: Commit and Push Changes
       run: |
-        mv cvnn.html index.html
-        git add cvnn.html cvnn.pdf
+        git add index.html cvnn.pdf
         git commit -m "Update cvnn.html and cvnn.pdf from cvnn.md"
         git push
       env:
