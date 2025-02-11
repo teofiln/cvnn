@@ -1,8 +1,8 @@
 ---
 date: 2025-02-11
+pdf-engine: tinytex
 format:
   pdf:
-    latex-engine: tinytex
     documentclass: article
     margin-left: 1.5cm
     margin-right: 1.5cm
