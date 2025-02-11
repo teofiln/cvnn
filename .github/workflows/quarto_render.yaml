@@ -33,6 +33,7 @@ jobs:
       with:
         to: pdf
         path: cvnn.md
+        execute-params: '{"format": {"pdf": {"fontsize": "10pt", "geometry": "a4paper"}}}'
 
     - name: Configure Git
       run: |
