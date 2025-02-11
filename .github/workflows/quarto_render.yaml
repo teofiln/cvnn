@@ -16,19 +16,20 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v3
 
-    - name: Set up Pandoc and Tectonic
-      run: |
-        sudo apt-get update
-        sudo apt-get install -y pandoc
-        curl --proto '=https' --tlsv1.2 -fsSL https://drop-sh.fullyjustified.net | sh
-        sudo mv ./tectonic /usr/local/bin/tectonic
-        sudo chmod +x /usr/local/bin/tectonic
+    - name: Setup Quarto
+      uses: quarto-dev/quarto-actions/setup@v2
 
     - name: Render Markdown to HTML
-      run: pandoc -f markdown -t html5 -o index.html cvnn.md
+      uses: quarto-dev/quarto-actions/render@v2
+      with:
+        to: html
+        path: cvnn.md
 
     - name: Render Markdown to PDF
-      run: pandoc --pdf-engine "tectonic" -f markdown -t pdf -o ./cvnn.pdf cvnn.md
+      uses: quarto-dev/quarto-actions/render@v2
+      with:
+        to: pdf
+        path: cvnn.md
 
     - name: Configure Git
       run: |
@@ -37,8 +38,9 @@ jobs:
 
     - name: Commit and Push Changes
       run: |
-        git add index.html cvnn.pdf
-        git commit -m "Update index.html and cvnn.pdf from cvnn.md"
+        mv cvnn.html index.html
+        git add cvnn.html cvnn.pdf
+        git commit -m "Update cvnn.html and cvnn.pdf from cvnn.md"
         git push
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
