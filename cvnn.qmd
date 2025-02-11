@@ -1,7 +1,8 @@
 ---
 format:
-  pdf-engine: lualatex
+  
   pdf:
+    pdf-engine: lualatex
     documentclass: article
     margin-left: 1.5cm
     margin-right: 1.5cm
@@ -9,7 +10,8 @@ format:
     margin-bottom: 1.5cm
     fontsize: 8pt
     papersize: a4
-    mainfont: Ubuntu
+    mainfont: "Ubuntu"
+    sansfont: "Ubuntu Sans"
   html:
     css: style.css
     embed-resources: true
