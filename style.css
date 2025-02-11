@@ -1,0 +1,10 @@
+body {
+  max-width: 800px; /* Limit width to 800px */
+  margin: auto; /* Center content */
+  padding: 20px;
+  font-family: "Ubuntu"; /* Ensure consistency with PDF */
+}
+
+h1, h2, h3 {
+  text-align: center; /* Center headings */
+}
