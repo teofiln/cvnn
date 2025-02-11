@@ -1,14 +1,22 @@
 ---
-#title: "Novica Nakov's resume"
-#author: Novica Nakov
-#date: "2024-07-07"
+date: 2025-02-11
+format:
+  pdf:
+    documentclass: article
+    margin-left: 1.5cm
+    margin-right: 1.5cm
+    margin-top: 1.5cm
+    margin-bottom: 1.5cm
+    fontsize: 8pt
+    papersize: a4
+    mainfont: "Times New Roman"
 ---
 
 # Novica Nakov
-
-| [nnovica\@gmail.com](mailto:nnovica@gmail.com) |  [LinkedIn](https://linkedin.com/in/novica/) | [GitHub](https://github.com/novica/) | Skopje, North Macedonia and Oslo, Norway |
+  
+[nnovica\@gmail.com](mailto:nnovica@gmail.com) |  [LinkedIn](https://linkedin.com/in/novica/) | [GitHub](https://github.com/novica/) | Skopje, North Macedonia and Oslo, Norway |
 |---------------|---------------|---------------|---------------|
-
+  
 Curious and analytically minded self-starter with 5+ years of experience
 collaborating with different stakeholders in delivering production grade
 data solutions, ensuring the accuracy and integrity of data products, and
@@ -78,3 +86,4 @@ October 1999 - September 2005, Skopje, North Macedonia
 - [Microsoft Certified: Azure Fundamentals](https://learn.microsoft.com/en-us/users/novicanakov-2159/credentials/7ecc93b6a2e38a11)
 - [dbt Fundamentals](https://www.credential.net/2a95b452-5425-49f9-bc3e-85abc0eca9e8#gs.l24xnd)
 - [Carpentries Certified Instructor](https://carpentries.org/instructors/)
+                     
