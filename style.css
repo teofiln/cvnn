@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+
 body {
+  font-family: 'Ubuntu', sans-serif;
   max-width: 800px; /* Limit width to 800px */
-  margin: auto; /* Center content */
+  margin: auto;  /* Center content */
   padding: 20px;
-  font-family: "Ubuntu"; /* Ensure consistency with PDF */
 }
 
 h1, h2, h3 {
