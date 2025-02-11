@@ -25,15 +25,14 @@ jobs:
       uses: quarto-dev/quarto-actions/render@v2
       with:
         to: html
-        path: cvnn.md
+        path: cvnn.qmd
         output: index.html
 
     - name: Render Markdown to PDF
       uses: quarto-dev/quarto-actions/render@v2
       with:
         to: pdf
-        path: cvnn.md
-        execute-params: '{"format": {"pdf": {"fontsize": "10pt", "geometry": "a4paper"}}}'
+        path: cvnn.qmd
 
     - name: Configure Git
       run: |
