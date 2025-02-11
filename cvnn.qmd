@@ -2,6 +2,7 @@
 date: 2025-02-11
 format:
   pdf:
+    pdf-engine: tinytex
     documentclass: article
     margin-left: 1.5cm
     margin-right: 1.5cm
