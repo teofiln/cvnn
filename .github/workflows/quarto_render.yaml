@@ -28,12 +28,6 @@ jobs:
         path: cvnn.qmd
         output: index.html
         
-    - name: Install Fonts
-      run: |
-        sudo apt-get update
-        sudo apt-get install -y ttf-mscorefonts-installer
-        fc-cache -fv 
-        
     - name: Render Markdown to PDF
       uses: quarto-dev/quarto-actions/render@v2
       with:
