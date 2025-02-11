@@ -26,7 +26,6 @@ jobs:
       with:
         to: html
         path: cvnn.qmd
-        output: index.html
         
     - name: Install Ubuntu Font
       run: |
