@@ -1,5 +1,6 @@
 ---
 format:
+  pdf-engine: lualatex
   pdf:
     documentclass: article
     margin-left: 1.5cm
