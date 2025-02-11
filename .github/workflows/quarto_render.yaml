@@ -47,6 +47,7 @@ jobs:
 
     - name: Commit and Push Changes
       run: |
+        mv cvnn.html index.html
         git add index.html cvnn.pdf
         git commit -m "Update cvnn.html and cvnn.pdf from cvnn.md"
         git push
