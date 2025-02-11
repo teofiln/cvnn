@@ -27,7 +27,11 @@ jobs:
         to: html
         path: cvnn.qmd
         output: index.html
-
+        
+    - name: Install Fonts
+      run: |
+        sudo apt-get install -y fonts-roboto
+        
     - name: Render Markdown to PDF
       uses: quarto-dev/quarto-actions/render@v2
       with:
